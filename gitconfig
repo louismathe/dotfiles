@@ -11,7 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	editor = code --wait
+	excludesfile = /Users/louis/.gitignore_global
 
 [alias]
   co = checkout
@@ -49,3 +50,13 @@
 [user]
 	email = mathe.louis@gmail.com
 	name = Louis Mathe
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/louis/.stCommitMsg
+[rerere]
+	enabled = true

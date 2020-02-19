@@ -3,5 +3,29 @@ alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
+alias gst='git status'
+alias gc='git commit'
+alias gco='git checkout'
+alias gl='git pull'
+alias gpom="git pull origin master"
+alias gp='git push'
+alias gd='git diff'
+alias gb='git branch'
+alias gba='git branch -a'
+alias del='git branch -d'
+alias grv='git remote -v'
+
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+# alias groutes='rake routes | grep $@'
+# alias aws-login='aws-google-auth -I C02tfgtii -S 897166709210 -u louis@skilbill.com -p default --resolve-aliases --ask-role --keyring'
+
+# # Quickly serve the current directory as HTTP
+# alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+# alias gcm="git checkout master"
+# alias gco="git checkout"
+# alias gc="git commit"
+# alias gd="git diff"
+# alias ci="commit"
